@@ -12,11 +12,7 @@ function App() {
     <div>
       <Header />
       <div className='layout'>
-        <Explore
-          data={storeData}
-          setFilteredData={setFilteredData}
-          filteredData={filteredData}
-        />
+        <Explore data={storeData} setFilteredData={setFilteredData} />
         <Shop data={storeData} filteredData={filteredData} />
       </div>
     </div>

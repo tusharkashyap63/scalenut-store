@@ -5,7 +5,7 @@ const getUnique = (items, value) => {
   return [...new Set(items.map((item) => item[value]))];
 };
 
-export default function Categories({ data, filteredData, setFilteredData }) {
+export default function Categories({ data, setFilteredData }) {
   const uniqueCategories = getUnique(data, 'CategoryName');
 
   const [filtersApplied, setFiltersApplied] = useState([]);
