@@ -1,9 +1,23 @@
 .explore {
-  border: 1px solid black;
-  padding: 1rem;
   flex: 1;
+  height: 100vh;
+  background-image: url(../../images/undraw_add_to_cart_vkjp.svg),
+    linear-gradient(to bottom, #ffffff, #f4f7f8);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
 }
 
 .explore__heading {
   margin-bottom: 10px;
+  padding: 0.6rem 1rem;
+
+  background-color: #fea01a;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .explore {
+    background-image: linear-gradient(to bottom, #ffffff, #f4f7f8);
+  }
 }

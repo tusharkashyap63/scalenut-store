@@ -1,9 +1,10 @@
 .shop {
-  border: 1px solid black;
-  flex: 2.7;
+  flex: 3;
   padding: 1rem;
+  background-color: #f4f7f8;
 }
 
 .shop__heading {
   margin-bottom: 10px;
+  text-align: center;
 }

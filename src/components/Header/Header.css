@@ -1,7 +1,8 @@
 .header {
-  border: 1px solid black;
   text-align: center;
   font-weight: 700;
+  background-color: white;
+  padding: 5px 0;
 }
 
 .logo {

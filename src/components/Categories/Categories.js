@@ -36,8 +36,9 @@ export default function Categories({ data, filteredData, setFilteredData }) {
 
   return (
     <div className='categories'>
+      <h3>Categories</h3>
       {uniqueCategories.map((category, i) => (
-        <label key={i}>
+        <div key={i}>
           <input
             type='checkbox'
             id={'category' + i}
@@ -45,8 +46,8 @@ export default function Categories({ data, filteredData, setFilteredData }) {
             value={category}
             onChange={handleChange}
           />
-          {category}
-        </label>
+          <label htmlFor={'category' + i}>{category}</label>
+        </div>
       ))}
     </div>
   );
