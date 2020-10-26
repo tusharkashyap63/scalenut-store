@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import Header from './components/Header/Header';
 import './App.css';
+import Explore from './components/Explore/Explore';
+import Shop from './components/Shop/Shop';
+import storeData from './data';
+import { useState } from 'react';
 
 function App() {
+  const [data, setData] = useState(storeData);
+  const [filteredData, setFilteredData] = useState(storeData);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <div className='layout'>
+        <Explore
+          data={data}
+          setFilteredData={setFilteredData}
+          filteredData={filteredData}
+        />
+        <Shop data={data} filteredData={filteredData} />
+      </div>
     </div>
   );
 }

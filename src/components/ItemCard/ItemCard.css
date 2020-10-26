@@ -1,0 +1,25 @@
+.itemCard {
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.itemCard__productName {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.itemCard__img {
+  width: 300px;
+  height: 300px;
+  border: 3px solid red;
+}
+
+.itemCard__img img {
+  width: 100%;
+  object-fit: fill;
+}
+
+.itemCard__categoryName {
+}

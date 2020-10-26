@@ -1,0 +1,9 @@
+.explore {
+  border: 1px solid black;
+  padding: 1rem;
+  flex: 1;
+}
+
+.explore__heading {
+  margin-bottom: 10px;
+}

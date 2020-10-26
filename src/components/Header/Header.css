@@ -1,0 +1,13 @@
+.header {
+  border: 1px solid black;
+  text-align: center;
+  font-weight: 700;
+}
+
+.logo {
+  height: 50px;
+}
+
+.logo img {
+  height: 100%;
+}

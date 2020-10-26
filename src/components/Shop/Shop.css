@@ -1,0 +1,9 @@
+.shop {
+  border: 1px solid black;
+  flex: 2.7;
+  padding: 1rem;
+}
+
+.shop__heading {
+  margin-bottom: 10px;
+}
